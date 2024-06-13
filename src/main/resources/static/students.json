@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Nguyen Van A",
+    "birthday": "2000-01-01",
+    "mobile_phone": "0123456789",
+    "hometown": "Hanoi"
+  },
+  {
+    "id": 2,
+    "name": "Tran Thi B",
+    "birthday": "2001-02-15",
+    "mobile_phone": "0987654321",
+    "hometown": "Ho Chi Minh City"
+  },
+  {
+    "id": 3,
+    "name": "Le Van C",
+    "birthday": "1998-11-22",
+    "mobile_phone": "0912345678",
+    "hometown": "Da Nang"
+  },
+  {
+    "id": 4,
+    "name": "Pham Thi D",
+    "birthday": "1999-07-07",
+    "mobile_phone": "0901234567",
+    "hometown": "Hai Phong"
+  }
+]
