@@ -49,14 +49,15 @@
                 <td><input id="hometown" required type="text"></td>
             </tr>
             <tr>
-                <td></td>
-                <td>
-                    <button type="submit">Save</button>
-                    <button style="margin-left: 10px;" type="reset">Reset</button>
+
+                <td colspan="2" style="text-align: center;">
+                    <div style="display: inline-block;">
+                        <button type="submit">Save</button>
+                        <button style="margin-left: 10px;" type="reset">Reset</button>
+                    </div>
                 </td>
             </tr>
         </table>
-
     </form>
     <div class="btn-group">
         <button disabled id="editBtn" type="button">Edit</button>
@@ -115,7 +116,6 @@
         });
     });
 
-
     // Hàm cập nhật trạng thái của nút "Edit" và "Delete"
     function updateEditAndDeleteButtonState() {
         const checkboxes = document.querySelectorAll('#userTableBody input[type="checkbox"]');
@@ -123,7 +123,6 @@
         editBtn.disabled = !atLeastOneChecked;
         deleteBtn.disabled = !atLeastOneChecked;
     }
-
     // Gọi hàm loadStudentData sau khi trang HTML được tải xong
 <!--    document.addEventListener('DOMContentLoaded', loadStudentData);-->
     document.getElementById('userForm').addEventListener('submit', function(e) {
@@ -151,7 +150,6 @@
         checkbox.addEventListener('change', updateEditAndDeleteButtonState);
         document.getElementById('userForm').reset();
     });
-
     // Thêm sự kiện cho nút Reset
     document.getElementById('userForm').addEventListener('reset', function() {
         const checkboxes = document.querySelectorAll('#userTableBody input[type="checkbox"]');
